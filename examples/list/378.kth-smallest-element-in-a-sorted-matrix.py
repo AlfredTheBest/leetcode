@@ -3,7 +3,7 @@
 """
 找第K个最小元素
 就是当在两个值之间找第k个元素
-
+二分法
 """
 
 class Solution:
@@ -26,7 +26,7 @@ class Solution:
 
         while left < right:
             mid = (left + right) // 2
-            if check(mid):
+            if check(mid): # mid >= k
                 right = mid
             else:
                 left = mid + 1

@@ -63,7 +63,7 @@ class Solution:
 
         def binary_search(s, k):
             # 在s中找比k大的第一个元素
-            low  = 0
+            low = 0
             high = len(s) - 1
             while low <= high:
                 mid = low + (high - low) // 2
