@@ -12,7 +12,7 @@ class Solution:
         bits = [0]
         high_bit = 0
         for i in range(1, n + 1):
-            if i & (i - 1):
+            if i & (i - 1) == 0:
                 high_bit = i
             bits.append(bits[i - high_bit] + 1)
         return bits
