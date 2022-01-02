@@ -15,7 +15,7 @@ class Solution:
                 if i == 31:
                     ans -= (1 << i)
                 else:
-                    ans |= (i << i)
+                    ans |= (1 << i)
         return ans
 
 
