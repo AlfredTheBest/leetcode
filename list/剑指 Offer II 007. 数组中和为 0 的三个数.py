@@ -10,6 +10,7 @@ https://leetcode-cn.com/problems/1fGaJU/
 
 """
 
+
 class Solution:
     def threeSum_v1(self, nums: List[int]) -> List[List[int]]:
         ret = []
@@ -74,7 +75,6 @@ class Solution:
                         return mid
                     else:
                         high = mid - 1
-
 
         res = []
 
