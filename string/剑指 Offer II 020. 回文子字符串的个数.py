@@ -1,26 +1,20 @@
 """
 https://leetcode-cn.com/problems/a7VOhD/
-https://leetcode-cn.com/problems/a7VOhD/solution/cpython3java-1dp-2zhong-xin-kuo-san-by-h-ad5t/
+https://leetcode-cn.com/problems/a7VOhD/solution/jian-zhi-offer-ii-020-hui-wen-zi-zi-fu-c-690y/
 思路:
     dp
 """
 class Solution:
     def countSubstrings(self, s: str) -> int:
-        n = len(s)
-
-        dp = [[False for _ in range(n)] for _ in range(n)]
-        for i in range(n):
-            dp[i][i] = True
-        res = n
-
-        for l in range(n-1, -1, -1):
-            for r in range(l+1, n):
-                if s[l] == s[r]:
-                    if r - l == 1:
-                        dp[l][r] = True
-                        res += 1
-                    else:
-                        if dp[l+1][r-1] == True:
-                            dp[l][r] = True
-                            res += 1
-        return res
+        count = 0
+        length = len(s)
+        #动态规划
+        dp = [[0]* length for _ in range(length)]
+        for i in range(length-1, -1, -1):   #dp[i][j]由dp[i+1][j-1]决定，所以i要从大到小计算
+            for j in range(i, length):    #保证i<=j
+                if s[i] != s[j]:
+                    continue
+                dp[i][j] = j-i<=2 or dp[i+1][j-1]
+                if dp[i][j]:
+                    count+=1
+        return count
