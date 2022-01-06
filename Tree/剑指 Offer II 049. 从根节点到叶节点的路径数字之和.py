@@ -12,7 +12,7 @@ class Solution:
                 return 0
             val = val * 10 + node.val
 
-            if not( node.left or node.right):
+            if not(node.left or node.right):
                 return val
 
             return dfs(node.left, val) + dfs(node.right, val)
