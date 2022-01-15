@@ -2,7 +2,6 @@
 https://leetcode-cn.com/problems/qn8gGX/
 思路:
     heapq
-
 """
 
 import heapq
@@ -20,3 +19,4 @@ class Solution:
                     else:
                         break
         return list(reversed([heapq.heappop(heap)[1] for _ in range(k) if heap]))
+
