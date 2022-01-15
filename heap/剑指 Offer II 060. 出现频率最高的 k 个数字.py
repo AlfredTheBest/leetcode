@@ -3,9 +3,11 @@ https://leetcode-cn.com/problems/g5c51o/
 思路:
     heapq
 """
+from collections import *
+import heapq
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        num_freq = collections.Counter(nums)
+        num_freq = Counter(nums)
         minHeap = []
 
         for x, f in num_freq.items():
