@@ -1,5 +1,6 @@
 """
 https://leetcode-cn.com/problems/ms70jA/
+https://leetcode-cn.com/problems/ms70jA/solution/zui-da-de-yi-huo-by-leetcode-solution-hr7m/
 思路:
     Trie
 """
