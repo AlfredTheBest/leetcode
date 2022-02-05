@@ -23,8 +23,6 @@ class Solution:
         M = matrix
         if not M:
             return 0
-        if not M:
-            return 0
 
         m = len(M)
         n = len(M[0])

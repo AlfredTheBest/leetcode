@@ -2,8 +2,7 @@
 https://leetcode-cn.com/problems/qIsx9U/
 https://leetcode-cn.com/problems/qIsx9U/solution/shua-chuan-jian-zhi-offer-day20-dui-lie-09ber/
 思路:
-    队列
-
+    队列 滑动窗口
 """
 
 
