@@ -6,7 +6,6 @@ https://leetcode-cn.com/problems/7WHec2/submissions/
 """
 
 
-
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:
 

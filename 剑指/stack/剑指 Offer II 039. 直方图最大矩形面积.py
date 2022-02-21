@@ -2,6 +2,7 @@
 https://leetcode-cn.com/problems/0ynMMM/
 思路:
     栈
+    栈其实可以有方向性
 """
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
