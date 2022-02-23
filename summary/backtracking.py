@@ -2,6 +2,8 @@
 res = []
 s = ''
 def backtrack(vars):
+    if  过滤条件:
+        return
     if 终止条件:
         存放结果
         return

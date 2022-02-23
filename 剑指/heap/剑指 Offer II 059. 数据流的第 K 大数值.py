@@ -3,6 +3,7 @@ https://leetcode-cn.com/problems/jBjn9C/
 思路:
     heapq
 """
+import heapq
 
 class KthLargest:
 
