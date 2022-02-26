@@ -3,6 +3,12 @@ https://leetcode-cn.com/problems/Q91FMA/
 
 思路:
     dp
+        dp[i][j] 表示以 arr[i], arr[j] 为结尾的 j 状态下的最长斐波那契序列长度
+
+        dp[i][j] = max(dp[j-i][i] + 1, dp[i][j])
+
+        ans = 0
+        return max(dp)
 """
 class Solution:
     def lenLongestFibSubseq(self, arr: List[int]) -> int:

@@ -3,6 +3,7 @@ https://leetcode-cn.com/problems/vvXgSW/
 思路:
     heapq
 """
+from heapq import *
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         p = g = ListNode(0)

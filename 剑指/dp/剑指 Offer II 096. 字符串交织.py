@@ -2,6 +2,15 @@
 https://leetcode-cn.com/problems/IY6buf/
 思路:
     dp
+    dp(i, j)代表 s1[i] s2[j] s3[i+j+1] 是 交织的
+
+    dp(i, j) =
+        s1[i] == s3[i+j+1] and dp(i-1, j) or
+        s2[j] == s3[i+j+1] and dp(i, j-1)
+    if i == -1: return s2[:j+1] == s3[:j+1]
+    if j == -1: return s1[:i+1] == s3[:i+1]
+
+    return dp(i, j)
 """
 
 class Solution:

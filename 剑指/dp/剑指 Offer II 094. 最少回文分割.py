@@ -3,6 +3,9 @@ https://leetcode-cn.com/problems/omKAoA/
 
 思路:
     dp
+    dp[i] 从 0 到 i 最小可分割次数
+    dp[i] = min(d[j]+1, dp[i]) if isPalindrome(s[j:i])
+    return dp[-1]
 """
 
 class Solution_v1:

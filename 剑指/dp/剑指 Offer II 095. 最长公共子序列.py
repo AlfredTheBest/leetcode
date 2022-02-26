@@ -2,6 +2,16 @@
 https://leetcode-cn.com/problems/qJnOS7/
 思路:
     dp
+
+    dp[i][j] 代表 text1[:i] 和 text2[:j] 最长公共子串
+
+    dp[i][j]
+        if text1[i-1] == text2[j-1]
+            dp[i][j] = dp[i-1][j-1] + 1
+        else
+            dp[i][j] = max(dp[i-1][j], dp[i][j - 1])
+
+    return dp[m][n]
 """
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
