@@ -3,6 +3,8 @@ https://leetcode-cn.com/problems/YaVDxD/
 https://leetcode-cn.com/problems/YaVDxD/solution/jia-jian-de-mu-biao-zhi-by-leetcode-solu-be5t/
 思路:
     dp
+    dp[j] j 的容量最多能装多少
+
 """
 
 class Solution:
