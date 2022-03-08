@@ -17,7 +17,7 @@ class Solution:
                     heapq.heappush(minHeap, (f, x))
             else:
                 heapq.heappush(minHeap, (f, x))
-        res  = []
+        res = []
         while minHeap:
             f, x = heapq.heappop(minHeap)
             res.append(x)

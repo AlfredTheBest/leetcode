@@ -5,6 +5,7 @@ https://leetcode-cn.com/problems/cuyjEf/
 
 """
 import random
+from itertools import accumulate
 
 
 class Solution:

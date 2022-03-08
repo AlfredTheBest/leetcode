@@ -5,6 +5,11 @@ https://leetcode-cn.com/problems/LGjMqU/solution/shua-chuan-jian-zhi-offer-day13
     快慢指针+反转链表+链表合并
 """
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
     def reverseList(self, head):
         pre, cur = None, head
@@ -25,7 +30,7 @@ class Solution:
         slow.next = None
         rev_half = self.reverseList(half)
         cur = pre.next
-        while slow and rev_half:
+        while cur and rev_half:
             tmp = cur.next
             cur.next = rev_half
             cur = cur.next

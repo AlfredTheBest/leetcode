@@ -5,6 +5,13 @@ https://leetcode-cn.com/problems/wtcaE1/solution/shua-chuan-jian-zhi-offer-day09
     哈希表+滑动窗口
 
 https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+模版
+dict = {}
+left = 0
+ret = 0
+for i, j in enumerate(s):
+    业务处理
+
 """
 class Solution:
     def lengthOfLongestSubstring(self, s):

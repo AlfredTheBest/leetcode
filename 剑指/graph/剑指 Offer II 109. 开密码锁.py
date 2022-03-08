@@ -3,6 +3,7 @@ https://leetcode-cn.com/problems/zlDJc7/
 思路:
     bfs
 """
+from collections import deque
 class Solution:
     def openLock(self, deadends: List[str], target: str) -> int:
 

@@ -3,6 +3,8 @@ https://leetcode-cn.com/problems/a7VOhD/
 https://leetcode-cn.com/problems/a7VOhD/solution/jian-zhi-offer-ii-020-hui-wen-zi-zi-fu-c-690y/
 思路:
     dp
+注意嵌套循环
+
 """
 class Solution:
     def countSubstrings(self, s: str) -> int:

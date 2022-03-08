@@ -3,6 +3,7 @@ https://leetcode-cn.com/problems/vlzXQL
 思路:
     dfs
 """
+import collections
 class Solution:
     def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
         dic=collections.defaultdict(list)
