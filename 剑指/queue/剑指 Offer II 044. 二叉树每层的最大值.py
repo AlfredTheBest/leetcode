@@ -11,8 +11,7 @@ class Solution:
         que = deque([root])
         si = len(que)
         while si != 0:
-
-            mx = -inf
+            mx = -float('inf')
             for i in range(si):
                 node = que.popleft()
                 mx = max(mx, node.val)

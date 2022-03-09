@@ -9,10 +9,7 @@ class Solution:
         if not head:
             node.next = node
             return node
-        if head == head.next:
-            head.next = node
-            node.next = head
-            return head
+
         cur=head
         while cur.next != head:
             if cur.val <= insertVal <= cur.next.val:
