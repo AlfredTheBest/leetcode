@@ -9,6 +9,6 @@ class Solution:
             return
         pa, pb = headA, headB
         while pa != pb:
-            pa = headB if not pa else pa.next
-            pb = headA if not pb else pb.next
+            pa = pa.next if pa else headB
+            pb = pb.next if pb else headA
         return pa

@@ -5,6 +5,8 @@ https://leetcode-cn.com/problems/M1oyTv/solution/cpython3java-hua-dong-chuang-ko
     滑动窗口+临界统计
 """
 
+from collections import defaultdict
+
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         need = defaultdict(int)
