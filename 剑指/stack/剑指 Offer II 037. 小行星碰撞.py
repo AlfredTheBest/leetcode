@@ -7,9 +7,6 @@ https://leetcode-cn.com/problems/XagZNi/solution/shua-chuan-jian-zhi-offer-day17
 """
 
 
-
-
-
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
         s, p = [], 0

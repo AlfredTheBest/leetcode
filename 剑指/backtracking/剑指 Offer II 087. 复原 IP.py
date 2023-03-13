@@ -3,9 +3,6 @@ https://leetcode-cn.com/problems/0on3uN/
 思路:
     backtrack
 """
-from torch.nn.functional import gelu
-import torch
-from torch.nn import TransformerEncoder, TransformerEncoderLayer
 
 
 class Solution:

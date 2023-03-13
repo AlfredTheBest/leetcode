@@ -22,6 +22,3 @@ class Solution:
             return None
 
         return root
-
-
-

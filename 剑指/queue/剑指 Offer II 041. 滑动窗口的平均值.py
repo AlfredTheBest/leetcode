@@ -4,7 +4,7 @@ https://leetcode-cn.com/problems/qIsx9U/solution/shua-chuan-jian-zhi-offer-day20
 思路:
     队列 滑动窗口
 """
-
+from collections import deque
 
 class MovingAverage:
 
